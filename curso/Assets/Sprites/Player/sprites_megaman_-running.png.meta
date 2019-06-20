@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: 18a13ee7239afbc4ca58d3f53af44a7a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8412435721442376404
+    second: sprites_megaman_-running_0
+  - first:
+      213: -2890395709734600905
+    second: sprites_megaman_-running_1
+  - first:
+      213: -6613218042720493427
+    second: sprites_megaman_-running_2
+  - first:
+      213: 6302278588897596383
+    second: sprites_megaman_-running_3
+  - first:
+      213: 8893196669309657303
+    second: sprites_megaman_-running_4
+  - first:
+      213: 8204167566488452254
+    second: sprites_megaman_-running_5
+  - first:
+      213: -4925082169252003594
+    second: sprites_megaman_-running_6
+  - first:
+      213: 6240014894573267247
+    second: sprites_megaman_-running_7
+  - first:
+      213: 8949238139363644657
+    second: sprites_megaman_-running_8
+  - first:
+      213: 3989394561261066023
+    second: sprites_megaman_-running_9
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprites_megaman_-running_0
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 635
+        width: 382
+        height: 433
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45753503ca85f8c4cacf84a62a3a0672
+      internalID: 8412435721442376404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_megaman_-running_1
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 635
+        width: 264
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a932ace94ef25e84cb310a91f00b3e5e
+      internalID: -2890395709734600905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_megaman_-running_2
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 622
+        width: 302
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097618b4049ca1742af3d48e29fe5193
+      internalID: -6613218042720493427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_megaman_-running_3
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 622
+        width: 419
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59525ac0c43f1604483199ea5ae2ad5b
+      internalID: 6302278588897596383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_megaman_-running_4
+      rect:
+        serializedVersion: 2
+        x: 2338
+        y: 635
+        width: 446
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95241ddfe8c0936488a52bd64fa43b3c
+      internalID: 8893196669309657303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_megaman_-running_5
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 64
+        width: 340
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625b69a2a5a11b544966b20a8088bff2
+      internalID: 8204167566488452254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_megaman_-running_6
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 64
+        width: 290
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a5c88cbd1261b40960f02a08ae92e6
+      internalID: -4925082169252003594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_megaman_-running_7
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 50
+        width: 328
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992455c1be5625646ad575e93fb89e3a
+      internalID: 6240014894573267247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_megaman_-running_8
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 64
+        width: 392
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1cf8ddafdcb5541ae2e7a1ca69d21b
+      internalID: 8949238139363644657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_megaman_-running_9
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 64
+        width: 445
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629f2d956ea63aa4ea99614301e4f420
+      internalID: 3989394561261066023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a9486196f0b922b4e8923e8f8594ce8e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

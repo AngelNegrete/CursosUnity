@@ -5,10 +5,10 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject enemies;
-    // Start is called before the first frame update
-    void Start()
+
+    public void StartSpawn()
     {
-        Invoke("generateEnemies",3f);
+        Invoke("generateEnemies",0);
     }
 
     void generateEnemies()

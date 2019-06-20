@@ -9,7 +9,13 @@ public class playerController : MonoBehaviour
     public GameObject bala, shootPoint;
     public float force;
     public bool facingRight;
-    // Start Dis called before the first frame update
+    public bool grounded;
+    public float x;
+
+    public Transform directionObject;
+    bool pressedJump;
+    bool pressedShoot;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -18,9 +24,33 @@ public class playerController : MonoBehaviour
     {
         facingRight = true;
     }
+
+    IEnumerator Wait(float tiempo)
+    {
+        yield return new WaitForSeconds(tiempo);
+        var balita = Instantiate(bala, shootPoint.transform.position, Quaternion.identity);
+        balita.SetActive(true);
+
+        Rigidbody2D rdBala = balita.GetComponent<Rigidbody2D>();
+
+        rdBala.velocity = facingRight ? Vector2.right * (speedBala * Time.deltaTime) : Vector2.left * (speedBala * Time.deltaTime);
+        Destroy(balita, 2f);
+    }
+
+    void Update()
+    {
+        x = Input.GetAxisRaw("Horizontal");
+        if(Input.GetKeyDown(KeyCode.W))
+        {
+            pressedJump = true;
+        }
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            pressedShoot = true;
+        }
+    }
     void FixedUpdate()
     {
-        float x = Input.GetAxisRaw("Horizontal");
         if (x > 0 & facingRight == false)
         {
             facingRight = true;
@@ -34,45 +64,42 @@ public class playerController : MonoBehaviour
 
         }
         rb.velocity = new Vector2((speed * Time.deltaTime) * x, rb.velocity.y);
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (pressedShoot == true)
         {
+            pressedShoot = false;
             var balita = Instantiate(bala, shootPoint.transform.position, Quaternion.identity);
             balita.SetActive(true);
 
             Rigidbody2D rdBala = balita.GetComponent<Rigidbody2D>();
 
-            /* if(facingRight==false)
-             {
-                 rdBala.velocity = (Vector2.left) * (speedBala * Time.deltaTime);
+            Vector2 direccion = directionObject.position - shootPoint.transform.position;
+            direccion.Normalize();
+            rdBala.velocity = direccion * speedBala * Time.deltaTime;
 
-             }
-
-            else if (facingRight == true)
-             {
-                 rdBala.velocity = (Vector2.right) * (speedBala * Time.deltaTime);
-
-             }*/
-
-            rdBala.velocity = facingRight ? Vector2.right * (speedBala * Time.deltaTime) : Vector2.left * (speedBala * Time.deltaTime);
+            //rdBala.velocity = facingRight ? Vector2.right * (speedBala * Time.deltaTime) : Vector2.left * (speedBala * Time.deltaTime);
             Destroy(balita, 2f);
+            //StartCoroutine(Wait(0.5f));
         }
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (pressedJump && grounded == true)
         {
             rb.AddForce(Vector2.up * force);
-
+            grounded = false;
+            pressedJump = false;
         }
-
-
     }
+
+
 
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "enemy")
         {
-            
-                Destroy(gameObject);
-            
+            Destroy(gameObject);
+        }
+        if(other.gameObject.tag == "Ground")
+        {
+            grounded = true;
         }
     }
 
